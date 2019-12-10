@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="ポートフォリオサイト">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>YUUKI MAGAWA</title>
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+</head>
+
+<body>
+  <!-- ヘッダー -->
+  <header>
+    <nav class="menu">
+      <ul class="menu__items">
+        <li class="menu__item">
+          <a href="#top" class="menu__link">TOP</a>
+        </li>
+        <li class="menu__item">
+          <a href="#about" class="menu__link">ABOUT</a>
+        </li>
+        <li class="menu__item">
+          <a href="#skill" class="menu__link">SKILL</a>
+        </li>
+        <li class="menu__item">
+          <a href="#portfolio" class="menu__link">PORTFOLIO</a>
+        </li>
+        <li class="menu__item">
+          <a href="#faq" class="menu__link">FAQ</a>
+        </li>
+      </ul>
+    </nav>
+
+    <nav class="hamburger-menu">
+        <img src="images/header-logo.png" class="hamburger-menu__img" alt="ヘッダーのロゴ画像">
+      <i class="fas fa-bars hamburger-menu__toggle"></i>
+    </nav>
+
+  </header>
+
+  <!-- トップ -->
+  <div class="top" id="top">
+    <div class="top__title">
+      <h1 id="greet">Hello<span id="piliod">.</span></h1>
+      <h1 id="fade">MAGAWA YUUKI</h1>
+    </div>
+  </div>
+  
+  <!-- メイン -->
+  <main>
+    <!-- 自己紹介部分 -->
+    <div class="about" id="about">
+
+      <h1 class="about__title fadein">ABOUT</h1>
+
+      <img src="images/about.jpg" alt="顔写真" class="about__img fadein">
+
+      <div class="about__texts">
+        <p class="about__text fadein">2000年生まれ、大阪府出身。</p>
+        <p class="about__text fadein">学生の頃からIT分野に興味があり、タッチタイピングの習得、<br class="text__br">C言語とSwiftの基礎を独学で勉強するなどしていました。</p>
+        <p class="about__text fadein">高校卒業後は、諸事情によりプログラミングから離れ、<br class="text__br">メーカーの建材商品部門に従事。</p>
+        <p class="about__text fadein">その後、再度エンジニアとしての道に挑戦したいと思い離職。</p>
+        <p class="about__text fadein">現在は、HTML5・CSS3・JavaScript・Ruby・SQL・Git・インフラ周り・<br class="text__br">各種フレームワーク（jQuery・Ruby on Rails・Bootstrap）などを独学で学習しています。</p>
+        <p class="about__text fadein">在職中にはITパスポート試験を、<br class="text__br">10月には基本情報技術者試験を受験し、無事合格しました。</p>
+      </div>
+
+    </div>
+
+    <!-- スキル部分 -->
+    <div class="skill" id="skill">
+
+      <h1 class="skill__title fadein">SKILL</h1>
+
+      <div class="skill__items">
+
+        <div class="skill__item fadein">
+          <h2>HTML5</h2>
+          <div class="skill__progress">
+              <div id="html5"></div>
+              <img src="images/skill-logos/html5.svg" alt="HTML5のロゴ" class="skill__img--small">
+          </div>
+        </div>
+  
+        <div class="skill__item fadein">
+          <h2>CSS3</h2>
+          <div class="skill__progress">
+              <div id="css3"></div>
+              <img src="images/skill-logos/css3.svg" alt="CSS3のロゴ" class="skill__img--medium">
+          </div>
+        </div>
+  
+        <div class="skill__item fadein">
+          <h2>Bootstrap</h2>
+          <div class="skill__progress">
+              <div id="bootstrap4"></div>
+              <img src="images/skill-logos/bootstrap4.svg" alt="Bootstrap4のロゴ" class="skill__img--small">
+          </div>
+        </div>
+
+        <div class="skill__item fadein">
+          <h2>JavaScript</h2>
+          <div class="skill__progress">
+              <div id="javascript"></div>
+              <img src="images/skill-logos/javascript.svg" alt="JavaScriptのロゴ" class="skill__img--small">
+          </div>
+        </div>
+  
+        <div class="skill__item fadein">
+          <h2>jQuery</h2>
+          <div class="skill__progress">
+              <div id="jquery"></div>
+              <img src="images/skill-logos/jquery.svg" alt="jQueryのロゴ" class="skill__img--large">
+          </div>
+        </div>
+  
+        <div class="skill__item fadein">
+          <h2>Ruby</h2>
+          <div class="skill__progress">
+              <div id="ruby"></div>
+              <img src="images/skill-logos/ruby.svg" alt="Rubyのロゴ" class="skill__img--small">
+          </div>
+        </div>
+  
+        <div class="skill__item fadein">
+          <h2>Ruby on Rails</h2>
+          <div class="skill__progress">
+              <div id="rails"></div>
+              <img src="images/skill-logos/rails.svg" alt="Ruby on Railsのロゴ" class="skill__img--small">
+          </div>
+        </div>
+  
+        <div class="skill__item fadein">
+          <h2>PHP</h2>
+          <div class="skill__progress">
+              <div id="php"></div>
+              <img src="images/skill-logos/php.svg" alt="PHPのロゴ" class="skill__img--medium">
+          </div>
+        </div>
+  
+        <div class="skill__item fadein">
+          <h2>MySQL</h2>
+          <div class="skill__progress">
+              <div id="mysql"></div>
+              <img src="images/skill-logos/mysql.svg" alt="MySQLのロゴ" class="skill__img--medium">
+          </div>
+        </div>
+
+        <div class="skill__item fadein">
+          <h2>Git / GitHub</h2>
+          <div class="skill__progress">
+              <div id="git"></div>
+              <img src="images/skill-logos/git.svg" alt="Gitのロゴ" class="skill__img--medium">
+          </div>
+        </div>
+
+        <div class="skill__item fadein">
+          <h2>Linux</h2>
+          <div class="skill__progress">
+              <div id="linux"></div>
+              <img src="images/skill-logos/linux.svg" alt="Linuxのロゴ" class="skill__img--medium">
+          </div>
+        </div>
+
+        <div class="skill__item fadein">
+          <h2>AWS</h2>
+          <div class="skill__progress">
+              <div id="aws"></div>
+              <img src="images/skill-logos/aws.svg" alt="AWSのロゴ" class="skill__img--medium">
+          </div>
+        </div>
+
+        <div class="skill__item fadein">
+          <h2>やる気</h2>
+          <div class="skill__progress">
+              <div id="motivation"></div>
+              <img src="images/skill-logos/motivation.svg" alt="炎のロゴ" class="skill__img--medium">
+          </div>
+        </div>
+
+        <div class="skill__item fadein">
+          <h2>Slack</h2>
+          <div class="skill__progress">
+              <div id="slack"></div>
+              <img src="images/skill-logos/slack.svg" alt="Slackのロゴ" class="skill__img--medium">
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ポートフォリオ部分 -->
+    <div class="portfolio" id="portfolio">
+      <h1 class="portfolio__title fadein">PORTFOLIO</h1>
+
+      <div class="portfolio__items">
+        <div class="portfolio__item fadein">
+          <img src="images/portfolios/portfolio-paiza.png" alt="paizaランクB達成" class="portfolio__img">
+          <p>paizaランクBを達成</p>
+        </div>
+
+        <div class="portfolio__item fadein">
+          <img src="images/portfolios/portfolio-twitter.png" alt="近日公開" class="portfolio__img">
+          <p>Twitter風SNSアプリケーション</p>
+        </div>
+
+        <div class="portfolio__item fadein">
+          <img src="images/portfolios/portfolio-todo.png" alt="近日公開" class="portfolio__img">
+          <p>簡易ToDoアプリケーション</p>
+        </div>
+
+        <div class="portfolio__item fadein">
+          <img src="images/portfolios/coming-soon.png" alt="近日公開" class="portfolio__img">
+          <p>近日公開</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq" id="faq">
+      <h1 class="faq__title fadein">FAQ</h1>
+      <div class="faq__items">
+        <ul>
+
+          <li class="faq__item fadein">
+            <div class="faq__question">
+              <h3>保有資格を教えてください。</h3>
+              <span class="faq__toggle">+</span>
+            </div>
+            <div class="faq__answer">
+              <p>現在、持っている資格は以下の通りです。</p>
+              <ul>
+                <li class="faq__license">基本情報技術者</li>
+                <li class="faq__license">ITパスポート</li>
+                <li class="faq__license">普通自動車免許</li>
+                <li class="faq__license">普通自動二輪車免許</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="faq__item fadein">
+            <div class="faq__question">
+              <h3>あなたの長所と短所を教えてください。</h3>
+              <span class="faq__toggle">+</span>
+            </div>
+            <div class="faq__answer">
+              <p>長所は検索力があることです。</p>
+              <p>エラーなど、何かわからないことがあっても、すぐに人に聞くのではなく、できる限り自分で調べるようにしています。</p>
+              <br>
+              <p>短所は漢字が苦手なところですが、その代わりタイピング速度にはかなり自信があります。</p>
+            </div>
+          </li>
+
+          <li class="faq__item fadein">
+            <div class="faq__question">
+              <h3>趣味を教えてください。</h3>
+              <span class="faq__toggle">+</span>
+            </div>
+            <div class="faq__answer">
+              <p>趣味は、筋トレ・映画鑑賞・バイク・ゲームです。</p>
+              <br>
+              <p>筋トレは、週2〜4日のペースで約1年半ジムに通い続けています。身体だけでなく精神的にも成長できたと感じています。</p>
+              <p>映画は、洋画が特に好きで、おすすめの映画は「インターステラー」です。</p>
+            </div>
+          </li>
+
+          <li class="faq__item fadein">
+            <div class="faq__question">
+              <h3>このポートフォリオサイトを制作するにあたって得た知見と反省点を教えてください。</h3>
+              <span class="faq__toggle">+</span>
+            </div>
+            <div class="faq__answer">
+              <p>このポートフォリオサイト設計にはBEMを採用しました。</p>
+              <p>BEMについて調べていくうえで、コーディング規則の重要性などを学べたと思います。</p>
+              <br>
+              <p>反省点としては、階層が深い要素の命名規則が明確でなかった点や、モバイルファーストで制作していなかった点です。</p>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- フッター -->
+  <footer>
+    <div class="contact" id="contact">
+      <h1 class="contact__title fadein">CONTACT</h1>
+
+      <ul class="contact__logos">
+        <li class="fadein">
+          <a href="mailto:safeee-test@yahoo.co.jp" target="_blank" class="contact__link contact__mail">
+            <i class="far fa-envelope fa-4x"></i>
+          </a>
+        </li>
+        
+        <li class="fadein">
+          <a href="" target="_blank" class="contact__link contact__twitter">
+            <i class="fab fa-twitter fa-4x"></i>
+          </a>
+        </li>
+        
+        <li class="fadein">
+          <a href="https://github.com/ma-yuuki" target="_blank" class="contact__link contact__github">
+            <i class="fab fa-github fa-4x"></i>
+          </a>
+        </li>
+      </ul>
+
+    </div>
+
+    <div class="copyright">
+      <p>&copy; 2019 Yuuki Magawa All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

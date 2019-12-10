@@ -1,0 +1,515 @@
+@charset "utf-8";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background-image: url(../images/background-image.svg);
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
+}
+
+
+/* ヘッダー */
+header {
+  width: 100%;
+  height: 68px;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  opacity: 0.9;
+  box-shadow: 0 0 4px;
+}
+
+.menu__link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: gray;
+  line-height: 68px;
+  padding: 0 30px;
+}
+
+.menu__link::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2.5px;
+  background: #333;
+  transform: scale(0, 1);
+  transform-origin: center top;
+  transition: 0.3s;
+}
+
+.menu__link:hover {
+  color: #333;
+}
+
+.menu__link:hover::after {
+  transform: scale(1, 1);
+}
+
+.menu__items {
+  display: flex;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.menu__item {
+  list-style: none;
+  margin: 0 auto;
+  color: gray;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ハンバーガーメニュー */
+.hamburger-menu {
+  text-align: center;
+  display: none;
+}
+
+.hamburger-menu__img {
+  height: 68px;
+  display: relative;
+  top: 0;
+  left: 0;
+}
+
+.hamburger-menu__toggle {
+  float: right;
+  cursor: pointer;
+  line-height: 68px;
+  margin-right: 15px;
+  font-size: 35px;
+  color: #333;
+}
+
+
+/* トップ */
+.top {
+  text-align: center;
+  /* background-color: #e5e7e9; */
+  /* background-color: #edf2f7; */
+  background-color: #fff;
+  height: calc(100% - 68px);
+  margin-top: 68px;
+  width: 100%;
+  position: relative;
+}
+
+.top__title {
+  display: inline-block;
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+#greet {
+  display: none;
+  font-size: 160px;
+  /* color: #fff; */
+  color: #333;
+}
+
+#fade {
+  display: none;
+  font-size: 40px;
+  /* color: #fff; */
+  color: #333;
+
+}
+
+
+/* 自己紹介部分 */
+.about {
+  text-align: center;
+  /* margin-top: 50px; */
+  color: #333;
+}
+
+.about__title {
+  color: #333;
+  font-size: 40px;
+  padding-top: 30px;
+}
+
+.about__img {
+  width: 250px;
+  border-radius: 125px;
+  margin-top: 30px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.22);
+  transition: 0.2s;
+}
+
+.about__img:hover {
+  box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.15), 0 0 5px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+}
+
+.about__texts {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.about__text {
+  margin: 15px;
+}
+
+
+/* スキル部分 */
+.skill {
+  background-color: #fff;
+  margin-top: 50px;
+}
+
+.skill__title {
+  color: #333;
+  background-color: #fff;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.skill__items {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 0;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.skill__items::after {
+  content: '';
+  width: 47%;
+  height: 200px;
+  margin-top: 3%;
+  background-color: #fff;
+}
+
+.skill__item {
+  width: 22%;
+  /* height: 230px; */
+  height: 200px;
+  margin-top: 3%;
+  text-align: center;
+  color: gray;
+  border-radius: 5%;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.22);
+  transition: 0.2s;
+}
+
+
+.skill__item:hover {
+  box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.15), 0 0 5px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+  cursor: pointer;
+  color: #333;
+}
+
+.skill__progress {
+  /* width: 100%; */
+  width: 140px;
+  /* height: 170px; */
+  height: 140px;
+  background-color: #fff;
+
+  position: relative;
+  /* box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.22); */
+  margin: 12px auto;
+}
+
+.skill__img--small {
+  width: 30%;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.skill__img--medium {
+  width: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.skill__img--large {
+  width: 75%;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+
+/* ポートフォリオ部分 */
+.portfolio {
+  text-align: center;
+}
+
+.portfolio__title {
+  color: #333;
+  padding-top: 30px;
+}
+
+.portfolio__items {
+  width: 100%;
+  /* background-color: pink; */
+  max-width: 900px;
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.portfolio__item {
+  width: 45%;
+  margin: 15px 0;
+  color: #333;
+  /* background-color: pink; */
+}
+
+.portfolio__img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.22);
+  transition: 0.2s;
+}
+
+.portfolio__img:hover {
+  box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.15), 0 0 5px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+}
+
+/* よくある質問部分 */
+
+.faq {
+  background-color: #fff;
+  padding-bottom: 50px;
+}
+
+.faq__title {
+  text-align: center;
+  color: #333;
+  padding-top: 30px;
+}
+
+.faq__item {
+  width: 80%;
+  max-width: 900px;
+  display: block;
+  margin: 10px auto;
+  padding: 15px 0;
+  color: #333;
+  border-bottom: solid 1px #c1c1c1;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+  /* background-color: pink; */
+  font-size: 13px;
+}
+
+.faq__item:hover {
+  background-color: #efefef;
+}
+
+/* .faq__question:after {
+  content: "+";
+  font-family: "Quicksand", sans-serif;
+  position: absolute;
+  right: 14px;
+  top: 17px;
+  top: calc(50% - 7.5px);
+  line-height: 15px;
+  font-size: 23px;
+  font-weight: normal;
+  color: #c1c1c1;
+} */
+
+.faq__question {
+  padding: 13px 37px 13px 14px;
+  position: relative;
+}
+
+.faq__toggle {
+  position:absolute;
+  top: calc(50% - 7.5px);
+  right: 14px;
+  line-height: 15px;
+  font-size: 23px;
+  color:#c1c1c1;
+}
+
+.faq__answer {
+  padding: 13px 37px 13px 14px;
+  display: none;
+}
+
+.faq__license {
+  margin-left: 2em;
+  list-style-type: disc;
+  color: #333;
+}
+
+
+/* フッター */
+footer {
+  background-color: #e5e7e9;
+  text-align: center;
+}
+
+.contact {
+  height: 200px;
+}
+
+.contact__logos {
+  width: 70%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.contact__title {
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+
+.contact__link:hover {
+  opacity: 0.3;
+}
+
+.contact__mail {
+  color: #f89174;
+}
+
+.contact__twitter {
+  color: #00acee;
+}
+
+.contact__github {
+  color: #24292e;
+}
+
+.copyright {
+  width: 100%;
+  height: 68px;
+  text-align: center;
+  line-height: 68px;
+  color: gray;
+}
+
+
+/* レスポンシブ対応 */
+
+/* タブレット表示 */
+@media (max-width: 1000px) {
+  #greet {
+    font-size: 120px;
+  }
+
+  #fade {
+    font-size: 30px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .skill__item {
+    width: 30%;
+    margin-top: 3.3%;
+  }
+
+  .skill__items::after {
+    content: '';
+    width: 30%;
+    height: 200px;
+    margin-top: 3%;
+  }
+}
+
+/* スマートフォン表示 */
+@media (max-width: 670px) {
+  #greet {
+    font-size: 80px;
+  }
+
+  #fade {
+    font-size: 20px;
+  }
+
+  .text__br {
+    display: none;
+  }
+  
+  .skill__items::after {
+    display: none;
+  }
+  
+  .skill__item {
+    width: 45%;
+    height: 180px;
+    margin-top: 5%;
+    font-size: 12px;
+  }
+
+  .skill__progress {
+    width: 120px;
+    height: 120px;
+    margin: 16.5px auto;
+  }
+
+  .portfolio__item {
+    width: 95%;
+  }
+}
+
+
+/* アニメーション用 */
+
+/* 画面外にいる状態 */
+.fadein {
+  opacity : 0.1;
+  transform : translate(0, 50px);
+  transition : all 500ms;
+}
+
+/* 画面内に入った状態 */
+.fadein.scrollin {
+  opacity : 1;
+  transform : translate(0, 0);
+}
+
+/* スコア表示 */
+.skill__score {
+  opacity: 0.1;
+  transition: 0.4s;
+}
