@@ -1,3 +1,5 @@
+'use strict';
+
 $(function() {
 
 
@@ -178,6 +180,17 @@ $(function() {
       $answer.slideDown();
       $toggle.text('-');
     }
+  });
+
+  // ハンバーガーメニューのアニメーション
+  $('#hamburger-open').click(function() {
+    $('.side-menu').css('right', '0');
+    $('.side-menu__cover').css('display', 'block');
+  });
+
+  $('.hamburger-close').click(function() {
+    $('.side-menu').css('right', '-70%');
+    $('.side-menu__cover').css('display', 'none');
   });
 
 
